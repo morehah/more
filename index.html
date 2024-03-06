@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"> 
-	<title>我是刘小胖</title>
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<title>我是刘小胖</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.container {
+				position: relative;
+				height: 500px;
+				/* 设置容器高度 */
+			}
 
-我是刘小胖
+			.image-wrapper {
+				position: absolute;
+				bottom: 0;
+				/* 图片底部与容器底部对齐 */
+				left: 0;
+				/* 图片左侧与容器左侧对齐 */
+			}
+		</style>
+	</head>
+	<body>
 
-</body>
+		<div class="container">
+			<div class="image-wrapper">
+				<img src="https://cdsassets.apple.com/live/7WUAS350/images/ios/locale/zh-cn/ios-17-iphone-14-pro-messages-send-memoji.png"
+					alt="Your Image">
+			</div>
+		</div>
+
+	</body>
 </html>
-
