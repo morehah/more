@@ -9,27 +9,32 @@
 		<style>
 	
 		</style>
-	</head>
-	<body>
-		我是刘小胖
-		
-		<div class="container">
-			<div class="image-wrapper">
-				<img src="https://cdsassets.apple.com/live/7WUAS350/images/ios/locale/zh-cn/ios-17-iphone-14-pro-messages-send-memoji.png"
-					alt="Your Image">
-			</div>
-		</div>
-	</body> -->
+	</head> -->
 
 <div id="app">
 <div class="demo-image__lazy">
   <el-image v-for="url in urls" :key="url" :src="url" lazy></el-image>
 </div>
+	<div class="container">
+			<div class="image-wrapper">
+				<img src="https://cdsassets.apple.com/live/7WUAS350/images/ios/locale/zh-cn/ios-17-iphone-14-pro-messages-send-memoji.png"
+					alt="Your Image">
+			</div>
+		</div>
 </div>
 </html>
 
 <style>
 	@import url("//unpkg.com/element-ui@2.15.14/lib/theme-chalk/index.css");
+	.image-wrapper {
+            height: 50%; /* 设置容器高度为图片高度的一半 */
+            overflow: hidden; /* 隐藏超出容器部分的内容 */
+        }
+
+        img {
+            display: block; /* 让图片以块级元素显示 */
+            margin-top: -50%; /* 将图片上半部分移出容器 */
+        }
 </style>
 
 <script src="//unpkg.com/vue@2/dist/vue.js"></script>
